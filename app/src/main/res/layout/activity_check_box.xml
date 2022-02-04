@@ -1,0 +1,101 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:padding="20dp"
+    tools:context=".CheckBox">
+
+
+    <ImageView
+        android:id="@+id/tv_pizza"
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:src="@drawable/pizza"
+        app:layout_constraintBottom_toTopOf="@+id/tv_burger"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:layout_constraintVertical_chainStyle="packed" />
+
+    <ImageView
+        android:id="@+id/tv_burger"
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:src="@drawable/burge"
+        app:layout_constraintBottom_toTopOf="@+id/tv_donut"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_pizza" />
+
+    <ImageView
+        android:id="@+id/tv_donut"
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:src="@drawable/donut"
+        app:layout_constraintBottom_toTopOf="@+id/tv_frenchfries"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_burger" />
+
+    <ImageView
+        android:id="@+id/tv_frenchfries"
+        android:layout_width="109dp"
+        android:layout_height="128dp"
+        android:src="@drawable/frenchfries"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/tv_donut" />
+
+    <CheckBox
+        android:id="@+id/cb_pizza"
+        android:layout_width="73dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="132dp"
+        android:text="Pizza"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_pizza"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <CheckBox
+        android:id="@+id/cb_burger"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Burger"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_burger"
+        app:layout_constraintTop_toBottomOf="@+id/cb_pizza" />
+
+    <CheckBox
+        android:id="@+id/cb_donut"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Donut"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_donut"
+        app:layout_constraintTop_toBottomOf="@+id/cb_burger" />
+
+    <CheckBox
+        android:id="@+id/cb_frenchfries"
+        android:layout_width="76dp"
+        android:layout_height="42dp"
+        android:layout_marginStart="40dp"
+        android:layout_marginTop="84dp"
+        android:text="Frenchfries"
+        android:textStyle="bold"
+        app:layout_constraintStart_toEndOf="@+id/tv_frenchfries"
+        app:layout_constraintTop_toBottomOf="@+id/cb_donut" />
+
+    <TextView
+        android:id="@+id/tv_amount"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
